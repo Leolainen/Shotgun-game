@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Rationale');
+
+body, html {
+	font-family: 'Rationale', sans-serif;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+}
+
+#container {
+	position: relative;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgba(000, 000, 000, 1);
+}
+
+#container span {
+	font-size: 60px;
+	position: relative;
+	color: white;
+	top: 50%;
+	pointer-events: none;
+}
+
+#weapons-ui {
+	position: absolute;
+	width: 900px;
+	height: 200px;
+	bottom: 5%;
+	left: 20%;
+	background: #222;
+	clear: both;
+}
+
+#shoot {
+	background: url("img/shoot.png") no-repeat;
+	opacity: 0.3;
+}
+
+#shoot:hover {
+	transform: scale(1.2);
+}
+
+#shoot:hover .actionInfo {
+	opacity: 1;
+}
+
+#shoot:active {
+	transform: scale(0.9);
+}
+
+#guard {
+	background: url("img/guard.png") no-repeat;
+}
+
+#guard:hover {
+	transform: scale(1.2);
+}
+
+#guard:hover .actionInfo {
+	opacity: 1;
+}
+
+#guard:active {
+	transform: scale(0.9);
+}
+
+#reload {
+	background: url("img/reload.png") no-repeat;
+}
+
+#reload:hover {
+	transform: scale(1.2);
+}
+
+#reload:hover .actionInfo {
+	opacity: 1;
+}
+
+#reload:active {
+	transform: scale(0.9);
+}
+
+#shotgun {
+	background: url("img/shotgun.png") no-repeat;
+	opacity: 0.3;
+}
+
+#shotgun:hover {
+	transform: scale(1.2);
+}
+
+#shotgun:hover .actionInfo {
+	opacity: 1;
+}
+
+#shotgun:active {
+	transform: scale(0.9);
+}
+
+#ammobelt {
+	position: absolute;
+	width: 42px;
+	height: 173px;
+	top: 38%;
+	left: 60%;
+	margin-top: 10px;
+	background: rgba(42, 166, 12, 0.3);
+}
+
+#ammobelt-ai {
+	position: absolute;
+	width: 42px;
+	height: 173px;
+	top: 12%;
+	left: 60%;
+	background: rgba(166, 12, 12, 0.3);
+}
+
+
+#ammobelt img, #ammobelt-ai img {
+	position: absolute;
+	transform: rotate(270deg);
+	left: 5px;
+}
+
+#textboard {
+	position: absolute;
+	color: white;
+	font-size: 20px;
+	width: 300px;
+	height: 374px;
+	top: 12%;
+	left: 37%;
+	background: #111;
+	overflow: hidden;
+}
+
+#textboard-text {
+	position: relative;
+	margin-left: 20px;
+}
+
+#round-text {
+	position: absolute;
+	top: 2%;
+	left: 44%;
+	color: yellow;
+	font-size: 24px;
+}
+
+.ui-buttons {
+
+	position: relative;
+	width: 128px;
+	height: 128px;
+	float: left;
+	margin: 3em 3em 1em 3em;
+	transition: 0.3s ease-in-out;
+}
+
+.actionInfo {
+	opacity: 0.3;
+	position: absolute;
+	color: white;
+	width: 100%;
+	font-size: 25px;
+	top: -30px;
+	text-align: center;
+	transition: .3s ease;
+	pointer-events: none; 
+}
